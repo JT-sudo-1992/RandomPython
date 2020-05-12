@@ -1,5 +1,5 @@
 # This is a magic 8 ball
-
+# Tell the magic 8 ball your question
 import random
 responses = [
     "it is certain",
@@ -11,4 +11,11 @@ responses = [
 ]
 input("Tell the magic 8 ball your question: ")
 answer = random.choice(responses)
-print(f"the magic 8 ball says:: {answer}")
+print(f"the magic 8 ball says: {answer}")
+
+Yes = input("are you happy with your answer(yes/no): ")
+if Yes == 'yes':
+    print ("Good enjoy your day")
+if Yes == 'no':
+    answer = random.choice(responses)
+    print(f"your new answer is: {answer}")
