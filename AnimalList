@@ -1,0 +1,12 @@
+animal1 = input("Name an animal: ")
+animal2 = input("Name another animal: ")
+animal3 = input("Name another animal: ")
+animal4 = input("Name another animal: ")
+list =(animal1, animal2, animal3, animal4)
+sortedlist = sorted(list)
+print("the animals in order is: ",sortedlist)
+
+print("the first animal is: ",sortedlist[0])
+print("the second animal is: ",sortedlist[1])
+print("the third animal is: ",sortedlist[2])
+print("the fourth animal is: ",sortedlist[3])
