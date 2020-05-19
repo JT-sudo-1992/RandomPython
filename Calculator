@@ -3,37 +3,21 @@ print("Hello, this is a simple calculator:\n"
       "- for minus\n"
       "* for times\n"
       "/ for divide\n"
-      "% for remainder\n"
-      "** for power of")
+      "% for remainder")
 
 num1 = float(input("Please enter first number: "))
 num2 = float(input("Please enter second number: "))
 operation = input("please enter operation required: ")
 
-op1 = (num1 + num2)
-op2 = (num1 - num2)
-op3 = (num1 * num2)
-op4 = (num1 / num2)
-op5 = (num1 % num2)
-op6 = (num1 ** num2)
-
 if '+' in operation:
-    print("this is the result of num1 + num2")
-    print(op1)
+    print("this is the result of: ", num1, "+", num2, "=",num1 + num2)
 elif '-' in operation:
-    print("this is the result of num1 - num2")
-    print(op2)
+    print("this is the result of: ", num1, "-", num2, "=",num1 - num2)
 elif '*' in operation:
-    print("this is the result of num1 * num2")
-    print(op3)
+    print("this is the result of: ", num1, "*", num2, "=",num1 * num2)
 elif '/' in operation:
-    print("this is the result of num1 / num2")
-    print(op4)
+    print("this is the result of: ", num1, "/", num2, "=",num1 / num2)
 elif '%' in operation:
-    print("this is the result of num1 % num2")
-    print(op5)
-elif '**' in operation:
-    print("this is the result of num1**num22")
-    print(op6)
+    print("this is the result of: ", num1, "%", num2, "=",num1 % num2)
 else:
     print("Please enter valid operation")
