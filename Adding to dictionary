@@ -1,0 +1,30 @@
+mydict = {
+    'jamie': 111,
+    'ben': 222
+}
+
+print(mydict)
+
+name = input("please enter name: ")
+number = int(input("Please enter number: "))
+
+mydict.update({name:number})
+print(mydict)
+
+question = input("do you want to add another name?: ")
+
+if 'no' in question:
+    print("Okay, thank you")
+
+if 'yes' in question:
+    name2 = input("please enter name: ")
+    number2 = int(input("Please enter number: "))
+
+mydict.update({name2:number2})
+print(mydict)
+
+Names = list(mydict.keys())
+Numbers = list(mydict.values())
+
+print(Names)
+print(Numbers)
