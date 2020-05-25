@@ -1,0 +1,35 @@
+print("Hello, Grade scoring is:\n"
+      "A = 90% - 100%\n"
+      "B = 80% - 89%\n"
+      "C = 70% - 70%\n"
+      "D = 60% - 69%\n"
+      "E = 50% - 59%\n"
+      "F = 49% or below\n"
+      "")
+
+Student = input("Please enter students name: ")
+Homework = float(input("Please enter homework score /25: "))
+Assessment = float(input("Please enter assessment /50: "))
+Final = float(input("Please enter final /100: "))
+
+def info():
+    Info = int((Homework/175)+(Assessment/175)+(Final/175))*100
+    return Info
+info()
+
+percent = str(float(round(info(),2)))+'%'
+
+if info() <= 49:
+    print(Student,"your percentage is",percent,"which is an F.")
+elif info() >= 50 and info() <= 59:
+    print(Student,"your percentage is",percent,"which is an E.")
+elif info() >= 60 and info() <= 69:
+    print(Student,"your percentage is",percent,"which is an D.")
+elif info() >= 70 and info() <= 79:
+    print(Student,"your percentage is",percent,"which is an C.")
+elif info() >= 80 and info() <= 89:
+    print(Student,"your percentage is",percent,"which is an B.")
+elif info() >= 90 and info() <= 100:
+    print(Student,"your percentage is",percent,"which is an A.")
+else:
+    print("Please enter Valid inputs")
