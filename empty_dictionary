@@ -1,0 +1,19 @@
+empty ={
+    }
+
+def insert():
+    name = input("Please enter name: ")
+    number = int(input("Please enter number:" ))
+    empty.update({name:number})
+
+insert()
+
+
+
+print(empty)
+
+names = list(empty.keys())
+numbers = list(empty.values())
+
+print(names)
+print(numbers)
